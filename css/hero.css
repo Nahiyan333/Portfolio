@@ -1,0 +1,74 @@
+/* HERO REDESIGN */
+
+.hero-new {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* blurred background image */
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../images/Portfolio.jpg") center/cover no-repeat;
+  filter: blur(6px) brightness(0.7) contrast(1.2);
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* dark overlay */
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 15, 35, 0.45);
+  z-index: 2;
+}
+
+/* faded huge portfolio text */
+.bg-text {
+  position: absolute;
+  font-size: 120px;
+  color: rgba(255,255,255,0.06);
+  letter-spacing: 10px;
+  z-index: 2;
+}
+
+/* content */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+/* circular photo */
+.hero-profile {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid pink;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.35);
+  margin-bottom: 20px;
+}
+
+/* name */
+.hero-content h2 {
+  font-size: 36px;
+}
+
+.hero-content span {
+  color: pink;
+}
+
+/* role text */
+.hero-content p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ddd;
+}
